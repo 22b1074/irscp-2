@@ -9,7 +9,7 @@ export default function NavBar() {
     <nav style={styles.nav}>
       {/* Logo Section */}
       <div style={styles.logoContainer}>
-        <img src="/files/logo.png" alt="Logo" style={styles.logo} />
+        <img src={`${process.env.PUBLIC_URL}/files/logo.png`} alt="Logo" style={styles.logo} />
       </div>
 
       {/* Navigation Links */}
@@ -32,10 +32,10 @@ export default function NavBar() {
           {dropdownOpen && (
             <ul style={styles.dropdownMenu}>
               <li style={styles.dropdownItem}>
-                <a href="/files/credits.pdf" style={styles.link} target="_blank" rel="noopener noreferrer">Credit Requirements</a>
+                <a href={`${process.env.PUBLIC_URL}/files/credits.pdf`} style={styles.link} target="_blank" rel="noopener noreferrer">Credit Requirements</a>
               </li>
               <li style={styles.dropdownItem}>
-                <a href="/files/campus-life.pdf" style={styles.link} target="_blank" rel="noopener noreferrer">Campus Life</a>
+                <a href={`${process.env.PUBLIC_URL}/files/campus-life.pdf`} style={styles.link} target="_blank" rel="noopener noreferrer">Campus Life</a>
               </li>
               <li style={styles.dropdownItem}>
                 <a href="https://www.insti.app/explore" style={styles.link} target="_blank" rel="noopener noreferrer">Insti App</a>
